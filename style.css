@@ -1,0 +1,14 @@
+#header {
+    text-align: center;
+    background-color:#033a3d;
+}
+
+.pager {
+    background-color: lime;
+    padding: 50px;
+}
+
+#settingsButton {
+    float: right;
+    padding: 10px;
+}
