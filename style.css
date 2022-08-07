@@ -12,3 +12,8 @@
     float: right;
     padding: 10px;
 }
+
+#creditsButton {
+    float: left;
+    padding: 10px;
+}
