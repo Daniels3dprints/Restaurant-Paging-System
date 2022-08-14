@@ -1,6 +1,7 @@
 #header {
     text-align: center;
     background-color:#033a3d;
+    z-index: 1;
 }
 
 .pager {
