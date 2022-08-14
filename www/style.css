@@ -6,7 +6,6 @@
 
 .pager {
     background-color: lime;
-    padding: 50px;
 }
 
 #settingsButton {
@@ -15,5 +14,9 @@
 }
 
 #creditsButton {
+    padding: 10px;
+}
+
+button {
     padding: 10px;
 }
