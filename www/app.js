@@ -11,6 +11,6 @@ app.get('/credits', (req, res) => {
 app.get('/settings', (req, res) => {
     res.sendFile(`${__dirname}/settings.html`);
 });
-app.listen(3333, () => {
-    console.log('Application listening on port 3333!');
+app.listen(80, () => {
+    console.log('Application listening on port 80!');
 });
