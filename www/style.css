@@ -5,7 +5,7 @@
 }
 
 .pager {
-    background-color: lime;
+    background-color: limegreen;
     height: 100px;
     width: 100px;
 }
@@ -21,6 +21,9 @@
 
 button {
     padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 5px #cdcdcd;
 }
 
 td {
