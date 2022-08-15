@@ -4,8 +4,9 @@
         <title>Ockwells Cafe</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+        <script src="./js/pagerControl.js"></script>
     </head>
     <body>
         <div id="header">
@@ -21,6 +22,9 @@
                         <button class="pager" id="pager1">
                             <p>1</p>
                             <h4 class="pagerStatus" id="pagerStatus1">Idle</h4>
+                            <button onclick="updateStatus('error', 'pager1', 'pagerStatus1');">error</button>
+                            <button onclick="updateStatus('active', 'pager1', 'pagerStatus1');">active</button>
+                            <button onclick="updateStatus('idle', 'pager1', 'pagerStatus1');">idle</button>
                         </button>
                     </td>
                     <td>
