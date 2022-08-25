@@ -18,3 +18,18 @@ function updateStatus(status, pagerID, pagerStatusID) {
             break;
     }
 }
+
+function deviceTrigger(pagerID, status) {
+    switch (pagerID) {
+        case "pager1":
+            break;
+    }
+    switch (status) {
+        case "idle":
+            break;
+        case "error":
+            break;
+        case "active":
+            break;
+    }
+}
