@@ -1,6 +1,13 @@
 //TODO
 //Script to communicate with pagers/server and update the pagers status accordingly
 
+pagerIPs = {
+    "pager1" : ["0.0.0.0"],
+    "pager2" : ["0.0.0.0"],
+    "pager3" : ["0.0.0.0"],
+    "pager4" : ["0.0.0.0"],
+}
+
 function updateStatus(status, pagerID, pagerStatusID) {
     switch (status) {
         case "idle":
