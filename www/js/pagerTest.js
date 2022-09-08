@@ -6,7 +6,7 @@ const pagerAmount = 4;
 fs.readFile("../config.json", "utf8", (err, jsonString) => {
     if (err) {
       console.log("Error reading config.json:", err);
-      alert("Couldn't read config.json! Operation cancelled. Contact daniel@daniels3dprints.com for help.");
+      alert("Couldn't read config.json! Operation cancelled.");
       return;
     }
     try {
