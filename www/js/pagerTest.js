@@ -2,19 +2,8 @@
 //Script to communicate with all pagers and test lights and sounds.\
 const pagerAmount = 4;
 
-fs.readFile("../config.json", "utf8", (err, jsonString) => {
-    if (err) {
-      console.log("Error reading config.json:", err);
-      alert("Couldn't read config.json! Operation cancelled.");
-      return;
-    }
-    try {
-      const config = JSON.parse(jsonString);
-      devModeEnabled = config.devMode;
-    } catch (err) {
-      console.log("Error parsing JSON string:", err);
-    }
-  });
+var config = readConfig();
+var devModeEnabled = config.devMode;
 
 function testPagers() {
     if (devModeEnabled) {
