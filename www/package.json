@@ -11,5 +11,9 @@
   },
   "author": "Daniel Smith (Daniels3dprints)",
   "license": "",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
