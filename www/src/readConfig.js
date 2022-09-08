@@ -1,6 +1,6 @@
 //TODO
 //Read config.json
-
+const fs = require('fs');
 
 
 function readConfig() {
