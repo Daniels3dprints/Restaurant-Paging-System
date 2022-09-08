@@ -1,6 +1,5 @@
 //TODO
-//Script to communicate with all pagers and test lights and sounds.
-const fs = require("fs");
+//Script to communicate with all pagers and test lights and sounds.\
 const pagerAmount = 4;
 
 fs.readFile("../config.json", "utf8", (err, jsonString) => {
