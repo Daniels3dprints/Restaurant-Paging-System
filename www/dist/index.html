@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ockwells Cafe</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+        <script src="pagerController.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <a href="/settings"><img id="settingsButton" src="./images/gearIcon.png" height="48"></a>
+            <img id="logo" src="./images/logo.svg" height="192">
+            <h1 id="appTitle" style="font-family: 'Playfair Display', serif; color: #f1c7c6;">Paging System</h1>
+            <hr>
+        </div>
+        <div id="controls">
+            <table>
+                <tr>
+                    <td>
+                        <button class="pager" id="pager1">
+                            <p>1</p>
+                            <h4 class="pagerStatus" id="pagerStatus1">Idle</h4>
+                        </button>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('error', 'pager1', 'pagerStatus1');">Error</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('active', 'pager1', 'pagerStatus1');">Active</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('idle', 'pager1', 'pagerStatus1');">Idle</button>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pager" id="pager2">
+                            <p>2</p>
+                            <h4 class="pagerStatus" id="pagerStatus2">Idle</h4>
+                        </button>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('error', 'pager2', 'pagerStatus2');">Error</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('active', 'pager2', 'pagerStatus2');">Active</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('idle', 'pager2', 'pagerStatus2');">Idle</button>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pager" id="pager3">
+                            <p>3</p>
+                            <h4 class="pagerStatus" id="pagerStatus3">Idle</h4>
+                        </button>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('error', 'pager3', 'pagerStatus3');">Error</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('active', 'pager3', 'pagerStatus3');">Active</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('idle', 'pager3', 'pagerStatus3');">Idle</button>
+                        </div>
+                    </td>
+                    <td>
+                        <button class="pager" id="pager4">
+                            <p>4</p>
+                            <h4 class="pagerStatus" id="pagerStatus4">Idle</h4>
+                        </button>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('error', 'pager4', 'pagerStatus4');">Error</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('active', 'pager4', 'pagerStatus4');">Active</button>
+                        </div>
+                        <div class="wrapper">
+                            <button onclick="updateStatus('idle', 'pager4', 'pagerStatus4');">Idle</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
