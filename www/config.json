@@ -1,0 +1,8 @@
+{
+    "dev_mode": true,
+    "pagers":[
+        {"pagerID":"John", "pagerIP":"0.0.0.0"}, 
+        {"pagerID":"John", "pagerIP":"0.0.0.0"}, 
+        {"pagerID":"John", "pagerIP":"0.0.0.0"}
+    ]
+}
