@@ -7,6 +7,7 @@ var devModeEnabled = config.devMode;
 
 function testPagers() {
     if (devModeEnabled) {
+        console.log('Dev mode enabled');
         for (let i = 0; i < pagerAmount + 1; i++) {
             deviceTrigger();
         }
