@@ -8,7 +8,7 @@ pagerIPs = {
     "pager4" : ["0.0.0.0"],
 }
 
-function updateStatus(status, pagerID, pagerStatusID) {
+global.updateStatus = function(status, pagerID, pagerStatusID) {
     switch (status) {
         case "idle":
             document.getElementById(pagerStatusID).innerHTML = "Idle";

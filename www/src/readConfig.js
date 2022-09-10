@@ -3,7 +3,7 @@
 const fs = require('fs');
 
 
-function readConfig() {
+global.readConfig = function() {
     fs.readFile("../config.json", "utf8", (err, jsonString) => {
         if (err) {
           console.log("Error reading config.json:", err);
