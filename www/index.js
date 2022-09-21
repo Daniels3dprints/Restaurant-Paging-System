@@ -1,6 +1,10 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+
+const port = 3000;
+const host = 'localhost';
+
 app.use(express.static(path.join(__dirname, '.')))
 app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/dist/index.html`);
@@ -23,6 +27,6 @@ app.get('/pagerController.js', (req, res) => {
 app.get('/restartServer.js', (req, res) => {
     res.sendFile(`${__dirname}/dist/restartServer.js`);
 });
-app.listen(80, () => {
-    console.log('Application listening on port 80!');
+app.listen(port, () => {
+    console.log('Application listening on http://${host}:${port}');
 });
