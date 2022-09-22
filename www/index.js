@@ -28,5 +28,5 @@ app.get('/restartServer.js', (req, res) => {
     res.sendFile(`${__dirname}/dist/restartServer.js`);
 });
 app.listen(port, () => {
-    console.log('Application listening on http://${host}:${port}');
+    console.log('Application listening on http://' + host + ':' + port);
 });
