@@ -1,6 +1,12 @@
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 module.exports = {
+    resolve: {
+      fallback: {
+        "fs": require.resolve('fs'),
+        "net": require.resolve('net'),
+      } 
+    },
     entry: {
       index: './src/index.js',
       readConfig: './src/readConfig.js',
